@@ -6,4 +6,4 @@ Procfile have three piece of information
 gunicorn will give you a server information. how are framework communicate with server.
 
 
-web : gunicorn app : app
+web : gunicorn run : app
