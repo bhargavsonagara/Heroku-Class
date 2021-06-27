@@ -1,8 +1,8 @@
+import joblib
 from flask import Flask, render_template, request
-import pickle
 
 app = Flask(__name__, template_folder='template')
-model = pickle.load(open('model_pkl', 'rb'))
+model = joblib.load('model_j')
 
 
 @app.route("/")
